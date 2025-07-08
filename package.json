@@ -1,5 +1,6 @@
 {
   "name": "news-aggregator",
+  "homepage": "https://feed-flash.web.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
