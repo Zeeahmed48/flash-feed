@@ -1,7 +1,11 @@
 @reference "../../../../index.css";
 
 .news-card {
-  @apply flex flex-col min-h-36 p-0;
+  @apply flex flex-col min-h-36 p-0 rounded-t-none;
+
+  .news-badge {
+    @apply absolute top-4 left-4;
+  }
 
   .news-image {
     @apply w-full select-none aspect-video object-cover;
@@ -26,8 +30,27 @@
       @apply text-xs text-neutral-400 mb-4;
     }
 
-    .news-source {
+    .news-footer {
       @apply flex-1 flex justify-between items-end gap-3;
+
+      .news-source {
+        @apply flex items-center gap-2;
+
+        .source-avatar {
+          @apply w-8 h-8 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center;
+
+          .avatar-text {
+            @apply text-white text-xs font-bold;
+          }
+        }
+        .source-text {
+          @apply text-xs font-medium text-gray-700;
+        }
+      }
+
+      .news-author {
+        @apply max-w-28 inline-block text-xs text-gray-700 truncate;
+      }
     }
   }
 }

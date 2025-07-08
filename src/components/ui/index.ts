@@ -1,3 +1,4 @@
+export { default as Badge } from './badge';
 export { default as Card } from './card';
 export { default as Checkbox } from './checkbox';
 export { default as DatePicker } from './date-picker';

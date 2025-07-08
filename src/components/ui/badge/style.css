@@ -1,0 +1,33 @@
+@reference "../../../index.css";
+
+.badge {
+  @apply px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r shadow-lg;
+
+  &.blue {
+    @apply from-blue-500 to-cyan-500;
+  }
+
+  &.green {
+    @apply from-green-500 to-emerald-500;
+  }
+
+  &.red {
+    @apply from-red-500 to-pink-500;
+  }
+
+  &.purple {
+    @apply from-purple-500 to-indigo-500;
+  }
+
+  &.orange {
+    @apply from-orange-500 to-yellow-500;
+  }
+
+  &.emerald {
+    @apply from-emerald-500 to-teal-500;
+  }
+
+  &.gray {
+    @apply from-gray-500 to-slate-500;
+  }
+}

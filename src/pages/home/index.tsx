@@ -2,7 +2,7 @@ import { memo, useMemo, type FC } from 'react';
 
 import { NewsList, Filters } from '@/features/news';
 import Container from '@/components/layout/container';
-import { EmptyResult, Loader } from '@/components/shared';
+import { ErrorMessage, Loader } from '@/components/shared';
 import { useFilters, useNews } from '@/hooks';
 
 import './style.css';
@@ -21,7 +21,7 @@ const Home: FC = memo(() => {
         <Filters values={filters} onChange={updateFilters} />
       </Container>
       <Container className="home-container">
-        {error ? <EmptyResult message={error} /> : null}
+        {error ? <div className='self-start mt-8 w-full'><ErrorMessage message='Error Loading Articles' description={error} /></div> : null}
         {loading ? <Loader /> : null}
         {shouldShowNews ? <NewsList data={articles} /> : null}
       </Container>

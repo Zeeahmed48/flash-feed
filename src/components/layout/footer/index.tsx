@@ -5,7 +5,7 @@ import './style.css';
 const Footer: FC = () => {
     return (
         <footer className="footer">
-            <p className='text'>© {new Date().getFullYear()} NewsAgg. All rights reserved.</p>
+            <p className='text'>© {new Date().getFullYear()} FlashFeed. All rights reserved.</p>
         </footer>
     );
 };

@@ -49,4 +49,5 @@ declare global {
     onSelectionChange: (updatedList: string[]) => void;
   }
 
+  type BadgeColor = 'blue' | 'green' | 'red' | 'purple' | 'orange' | 'emerald' | 'gray';
 }
