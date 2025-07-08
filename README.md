@@ -45,6 +45,7 @@
 
 ## 📂 Folder Overview
 
+```txt
 ├── Dockerfile
 ├── Dockerfile.dev
 ├── README.md
@@ -185,7 +186,7 @@
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
-
+```
 
 
 ## Prerequisites
