@@ -17,6 +17,7 @@
 - [Prerequisites](#prerequisites)
 - [Cloning the Repository](#cloning-the-repository)
 - [Setting Up the Development Environment](#setting-up-the-development-environment)
+- [🐳 Quick Start with Docker Compose](#-quick-start-with-docker-compose)
 - [🐳 Development in Docker](#-development-in-docker)
 
 ---
@@ -233,6 +234,16 @@ Example `.env` file:
 VITE_NEWS_API_KEY=your-newsapi-key-here
 VITE_GUARDIAN_API_KEY=your-guardian-api-key-here
 VITE_NYTIMES_API_KEY=your-nytimes-api-key-here
+```
+
+---
+
+## 🐳 Quick Start with Docker Compose
+
+If you want to skip manual setup and spin up the development environment immediately:
+
+```bash
+docker-compose up --build
 ```
 
 ---
