@@ -44,13 +44,13 @@ const Filters: FC<FilterProps> = ({ values, onChange }) => {
       <div className="dropdowns-container">
         <Select
           placeholder="All Sources"
-          options={SOURCES}
+          options={[...SOURCES]}
           value={values.source}
           onChange={handleChange('source')}
         />
         <Select
           placeholder="All Categories"
-          options={CATEGORIES}
+          options={[...CATEGORIES]}
           value={values.category}
           onChange={handleChange('category')}
         />
