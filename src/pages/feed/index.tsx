@@ -31,8 +31,8 @@ const Feed: FC = memo(() => {
     }, [isLoaded, loading, areAuthorsLoading]);
 
     const shouldShowPreferences = useMemo(() => {
-        return isLoaded && preferences === null && !areAuthorsLoading;
-    }, [isLoaded, preferences, areAuthorsLoading]);
+        return isLoaded && preferences === null && !areAuthorsLoading && !authorError && !newsError;
+    }, [isLoaded, preferences, areAuthorsLoading, authorError, newsError]);
 
     const shouldShowNews = useMemo(() => {
         return (
