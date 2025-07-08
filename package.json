@@ -1,0 +1,48 @@
+{
+  "name": "news-aggregator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "format": "prettier . --write",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules",
+    "docker:build": "docker build -t news-aggregator:prod .",
+    "docker:run": "docker run --name news-aggregator-prod -p 3000:80 news-aggregator:prod",
+    "docker:dev:build": "docker build -f Dockerfile.dev -t news-aggregator:dev .",
+    "docker:dev:run": "docker run --name news-aggregator-dev -p 8080:8080 -v .:/app -v /app/node_modules news-aggregator:dev"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.525.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "sonner": "^2.0.5",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react-swc": "^3.10.2",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.1.11",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^7.0.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}

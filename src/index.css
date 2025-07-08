@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #5551ff;
+  --color-primary-medium: #dedee9;
+  --color-primary-semi-light: '#EEEEFF';
+  --color-primary-light: #f7f7ff;
+
+  --shadow-card: 0 1px 8px 0 #efeff8;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+}

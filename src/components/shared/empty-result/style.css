@@ -1,0 +1,9 @@
+@reference "../../../index.css";
+
+.empty-result-container {
+  @apply flex-1;
+
+  .empty-result-text {
+    @apply text-slate-900 text-base text-center;
+  }
+}

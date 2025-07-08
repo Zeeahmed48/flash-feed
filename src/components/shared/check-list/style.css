@@ -1,0 +1,9 @@
+@reference "../../../index.css";
+
+.checklist-title {
+  @apply text-lg font-semibold text-gray-800 mb-4;
+}
+
+.checklist-container {
+  @apply flex flex-col gap-4;
+}

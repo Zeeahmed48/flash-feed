@@ -1,0 +1,10 @@
+@reference "../../../index.css";
+
+.input-container {
+  @apply flex items-center p-2.5 gap-2 bg-white border border-zinc-200 rounded-lg;
+
+
+  & .input {
+    @apply flex-1 w-full text-sm border-none focus-visible:ring-0 bg-transparent placeholder:text-neutral-400 placeholder:text-sm p-0;
+  }
+}

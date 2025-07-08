@@ -1,0 +1,33 @@
+@reference "../../../../index.css";
+
+.news-card {
+  @apply flex flex-col min-h-36 p-0;
+
+  .news-image {
+    @apply w-full select-none aspect-video object-cover;
+  }
+
+  .news-content {
+    @apply flex-1 flex flex-col p-5;
+
+    .news-link-container {
+      @apply flex justify-between items-start gap-4 mb-1;
+
+      .news-link {
+        @apply hover:text-primary truncate transition-all text-xl font-semibold text-slate-900;
+      }
+    }
+
+    .news-description {
+      @apply text-gray-700 text-sm mb-4;
+    }
+
+    .news-date {
+      @apply text-xs text-neutral-400 mb-4;
+    }
+
+    .news-source {
+      @apply flex-1 flex justify-between items-end gap-3;
+    }
+  }
+}

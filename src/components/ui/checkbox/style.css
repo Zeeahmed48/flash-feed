@@ -1,0 +1,13 @@
+@reference "../../../index.css";
+
+.checkbox-container {
+  @apply flex items-center;
+
+  .checkbox-input {
+    @apply w-5 h-5 text-primary bg-white border-gray-300 rounded focus:ring-0 cursor-pointer;
+  }
+
+  .checkbox-label {
+    @apply ml-3 text-sm font-medium text-gray-700 select-none cursor-pointer;
+  }
+}

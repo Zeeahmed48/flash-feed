@@ -1,0 +1,5 @@
+@reference "../../../index.css";
+
+.page-container {
+  @apply w-full max-w-screen-xl mx-auto max-[1290px]:px-3;
+}

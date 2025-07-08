@@ -1,0 +1,9 @@
+@reference "../../../index.css";
+
+.footer {
+  @apply bg-white py-4 border-t border-t-primary-medium;
+
+  .text {
+    @apply text-sm text-gray-500 text-center;
+  }
+}

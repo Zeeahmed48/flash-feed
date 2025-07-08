@@ -1,0 +1,13 @@
+@reference "../../../index.css";
+
+.select-form {
+  @apply max-w-sm;
+
+  .select-label {
+    @apply block mb-2 text-sm font-medium;
+  }
+
+  .select-box {
+    @apply bg-white border border-zinc-200 text-gray-900 text-sm rounded-lg focus:ring-0 focus:border-zinc-200 block w-full p-2.5 pr-8;
+  }
+}

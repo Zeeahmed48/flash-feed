@@ -1,0 +1,13 @@
+@reference "../../../index.css";
+
+.date-picker-container {
+  @apply max-w-sm;
+
+  .date-picker-label {
+    @apply block mb-2 text-sm font-medium;
+  }
+
+  .date-picker-input {
+    @apply bg-white border border-zinc-200 text-gray-900 text-sm rounded-lg focus:ring-0 focus:border-zinc-200 block w-full p-2.5;
+  }
+}

@@ -1,0 +1,30 @@
+
+@reference "../../../index.css";
+
+.header {
+  @apply bg-white py-3 border-b border-b-primary-medium;
+
+  .header-container {
+    @apply flex justify-between items-center gap-3;
+
+    .header-navigations {
+      @apply flex items-center gap-8;
+
+      .logo {
+        @apply w-10 h-10 object-contain rounded-lg;
+      }
+
+      nav {
+        @apply flex items-center gap-8;
+
+        .nav-link {
+          @apply text-neutral-400 font-semibold text-sm;
+
+          &.active {
+            @apply text-slate-900;
+          }
+        }
+      }
+    }
+  }
+}
