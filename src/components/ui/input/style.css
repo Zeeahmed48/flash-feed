@@ -5,6 +5,6 @@
 
 
   & .input {
-    @apply flex-1 w-full text-sm border-none focus-visible:ring-0 bg-transparent placeholder:text-neutral-400 placeholder:text-sm p-0;
+    @apply flex-1 w-full text-sm border-none focus-visible:ring-0 outline-0 bg-transparent placeholder:text-neutral-400 placeholder:text-sm p-0;
   }
 }
