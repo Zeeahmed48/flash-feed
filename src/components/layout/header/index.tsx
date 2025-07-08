@@ -1,13 +1,21 @@
-import type { FC } from 'react';
+import { useState, type FC } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { Menu } from 'lucide-react';
 
 import Container from '@/components/layout/container';
+import Sidebar from '@/components/layout/sidebar';
 import { APP_NAVIGATIONS, PATHS } from '@/constants';
 import { cn } from '@/utils';
 
 import './style.css';
 
 const Header: FC = () => {
+    const [isSideBarOpen, setIsSideBarOpen] = useState<boolean>(false);
+
+    const toggleSideBar = () => {
+        setIsSideBarOpen((prevState) => !prevState);
+    };
+
     return (
         <header className="header">
             <Container>
@@ -31,9 +39,14 @@ const Header: FC = () => {
                                 );
                             })}
                         </nav>
+                        <button onClick={toggleSideBar} className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden active:bg-gray-100">
+                            <Menu />
+                        </button>
                     </div>
                 </div>
             </Container>
+
+            <Sidebar isOpen={isSideBarOpen} />
         </header>
     );
 };

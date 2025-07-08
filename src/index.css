@@ -11,3 +11,7 @@
   --font-sans: Inter, system-ui, sans-serif;
   --font-dm-sans: 'DM Sans', sans-serif;
 }
+
+#root {
+  @apply min-h-dvh flex flex-col;
+}
